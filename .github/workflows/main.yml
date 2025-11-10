@@ -26,3 +26,5 @@ jobs:
         uses: codecov/codecov-action@v5
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: pytest testas
+        run: poetry run pylint src
